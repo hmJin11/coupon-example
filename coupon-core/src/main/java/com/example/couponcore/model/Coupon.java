@@ -24,7 +24,7 @@ public class Coupon extends BaseTimeEntity {
   @Column(nullable = false)
   private String title;
 
-  @Column(nullable = false)
+  @Column(nullable = false, name = "coupon_type")
   @Enumerated(value = EnumType.STRING)
   private CouponType type;
 
